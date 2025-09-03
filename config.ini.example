@@ -1,0 +1,40 @@
+# Configuration file for ANT+ to BLE FTMS Bridge
+# Edit these values to customize the bridge behavior
+
+[BLE_SETTINGS]
+# Device name that appears to BLE clients
+device_name = FTMS-ANT-Bridge
+
+# Update interval in seconds (how often to send data to BLE clients)
+update_interval = 1.0
+
+[ANT_SETTINGS]
+# ANT+ network key (usually don't change this)
+network_key = B9A521FBBD72C345
+
+# Device search timeout in seconds
+search_timeout = 30
+
+# Enable/disable specific device types
+enable_heart_rate = true
+enable_power_meter = true
+
+[LOGGING]
+# Log level: DEBUG, INFO, WARNING, ERROR
+log_level = INFO
+
+# Enable file logging (logs will be saved to bridge.log)
+log_to_file = false
+
+[ADVANCED]
+# Maximum number of BLE clients that can connect simultaneously
+max_clients = 5
+
+# Enable simulation mode (generates fake data for testing)
+simulation_mode = false
+
+# Simulation data values (only used if simulation_mode = true)
+sim_heart_rate = 150
+sim_power = 250
+sim_cadence = 90
+sim_speed = 35.0

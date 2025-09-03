@@ -1,0 +1,4 @@
+bless>=0.2.6
+bleak==0.21.1; sys_platform == "win32"
+bleak-winrt>=1.2.0; sys_platform == "win32"
+openant>=1.2.0
